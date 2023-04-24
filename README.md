@@ -1,13 +1,16 @@
 <h1 align="center">
 
 <img src="https://user-images.githubusercontent.com/6827931/226166354-a7cfea07-00c0-4167-bf0a-adf323d9d125.png" alt="Bash Bits Modular Bash Library" />
+<br />
+<img src="https://raw.githubusercontent.com/bash-bits/.github/master/.github/media/bash_logo-128x128.png" alt="Bourne Again Shell" />
 
 [BB-Functions v-1.0.0](https://github.com/bash-bits/bb-functions/releases/tag/v-1.0.0)
 
 </h1>
 
 <h3 align="center"><em>
-The Bash Bits Functions Module
+The Bash Bits Functions Module<br />
+The Hardest Working Module in the Stack!
 </em></h3>
 
 
@@ -19,8 +22,7 @@ The Bash Bits Functions Module
 <a href="https://github.com/bash-bits/bb-functions/releases" target="_blank">Releases</a>
 </h3>
 
-<details>
-<summary><h2><a name="toc">📖 Table of Contents</a></h2></summary>
+<details><summary><h2><a name="toc">📖 Table of Contents</a></h2></summary>
 
 - [Project Overview](#-project-overview)
 - [What's Included?](#-whats-included)
@@ -38,19 +40,71 @@ The Bash Bits Functions Module
 
 ## ⭐ [Project Overview](#toc)
 
-The Bash Bits Functions Module - an ever-increasing digital toolkit for developers.
+The Bash Bits Functions Module - an ever-increasing digital toolkit for developers.  BB-Functions is the digital workhorse which carries the bulk of the weight of any specific task on its own very broad shoulders - because, while figuring out if that array is empty isn't particularly _glamorous_ work, _someone_ HAS to do it ... over, and over, and over, and over again ... 
+
+### [Branch Reliability](#toc)
+
+The Branch Reliability Table is a way for you to determine how close to the bleeding edge you're comfortable getting.
+
+If you need stability, then download a branch marked with 🟢
+
+If you're contributing code to the project, you'll want 🔴
+
+| Branch               |    Stability    | Code Age         | Reliability |
+|----------------------|:---------------:|------------------|:-----------:|
+| `master`             |  latest stable  | latest release   |     🟢      |
+| `develop`            | latest unstable | most recent code |     🔴      |
 
 [`^ Top`](#toc)
 
 ## ❓ [What's Included?](#toc)
 
 
+<details><summary>✅ bb-functions.d</summary>
+<ul>
+    <li>✅ array</li>
+    <li>✅ assign</li>
+    <li>✅ bench</li>
+    <li>✅ date</li>
+    <li>✅ docker</li>
+    <li>✅ fail2ban</li>
+    <li>✅ filesystem</li>
+    <li>✅ git</li>
+    <li>✅ is</li>
+    <li>✅ network</li>
+    <li>✅ profile</li>
+    <li>✅ readkey</li>
+    <li>✅ registry</li>
+    <li>✅ stdout</li>
+    <li>✅ strict</li>
+    <li>✅ string</li>
+    <li>✅ time</li>
+    <li>✅ utility</li>
+</ul>
+</details>
+<ul>
+<li>✅ bb-functions.ini</li>
+<li>✅ bb-functions.sh</li>
+</ul>
 
 [`^ Top`](#toc)
 
 ## 📂 [Installation](#toc)
 
 
+Like ALL other Bash-Bits Modules, BB-Functions is "imported" using the [BB-Import Module](https://github.com/bash-bits/bb-import).  If you haven't yet installed BB-Import, perhaps you'd like to do so now?  It's as easy as running the following command in your terminal:
+
+```shell
+bash <(curl -sfLS https://raw.githubusercontent.com/bash-bits/bb-import/master/install.sh)
+```
+
+Once you've installed `BB-Functions`, you can include BB-ANSI in ANY of your Bash projects by including the following code snippet at the top of each file:
+
+```shell
+#!/usr/bin/env bb-import
+
+bb::import bb-functions
+```
 
 [`^ Top`](#toc)
 

@@ -1,15 +1,15 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bb-import
 
 # ==================================================================
-# bb-functions
+# bb-functions.d/bench
 # ==================================================================
-# BB-Functions Library File
+# BB-Functions Library
 #
-# File:         bb-functions
+# File:         bench
 # Author:       Ragdata
-# Date:         15/04/2023
+# Date:         25/04/2023
 # License:      MIT License
 # Copyright:    Copyright © 2023 Darren (Ragdata) Poulton
 # ==================================================================
-# PREFLIGHT
+# FUNCTIONS
 # ==================================================================
