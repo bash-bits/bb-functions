@@ -22,9 +22,9 @@
 # ==================================================================
 # DEPENDENCIES
 # ==================================================================
-bb::import bb-functions/assign
-bb::import bb-functions/is
-bb::import bb-functions/strict
+bb-import bb-functions/assign
+bb-import bb-functions/is
+bb-import bb-functions/strict
 # ==================================================================
 # FUNCTIONS
 # ==================================================================

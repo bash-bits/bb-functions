@@ -13,10 +13,10 @@
 # ==================================================================
 # DEPENDENCIES
 # ==================================================================
-bb::import bb-functions/array
-bb::import bb-functions/assign
-bb::import bb-functions/is
-bb::import bb-functions/string
+bb-import bb-functions/array
+bb-import bb-functions/assign
+bb-import bb-functions/is
+bb-import bb-functions/string
 # ==================================================================
 # FUNCTIONS
 # ==================================================================
