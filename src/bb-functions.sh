@@ -11,7 +11,7 @@
 # License:      MIT License
 # Copyright:    Copyright © 2023 Darren (Ragdata) Poulton
 # ==================================================================
-# PREFLIGHT
+# FUNCTIONS
 # ==================================================================
 # ------------------------------------------------------------------
 # functions::load
@@ -46,5 +46,5 @@ functions::load()
 # ==================================================================
 # IF SOURCED, RUN LOAD FUNCTION
 if [[ $(is::sourced) ]]; then
-	bb-functions::load "$@" || return $?
+	functions::load "$@" || return $?
 fi
