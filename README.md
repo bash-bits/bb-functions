@@ -22,6 +22,14 @@ The Hardest Working Module in the Stack!
 <a href="https://github.com/bash-bits/bb-functions/releases" target="_blank">Releases</a>
 </h3>
 
+<h3 align="center">
+
+If you like this repo, please give it a ⭐ (it really does help)
+
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/bash-bits/bb-import?style=social">
+
+</h3>
+
 <details><summary><h2><a name="toc">📖 Table of Contents</a></h2></summary>
 
 - [Project Overview](#-project-overview)
@@ -83,7 +91,6 @@ If you're contributing code to the project, you'll want 🔴
 </ul>
 </details>
 <ul>
-<li>✅ bb-functions.ini</li>
 <li>✅ bb-functions.sh</li>
 </ul>
 
@@ -91,14 +98,13 @@ If you're contributing code to the project, you'll want 🔴
 
 ## 📂 [Installation](#toc)
 
-
-Like ALL other Bash-Bits Modules, BB-Functions is "imported" using the [BB-Import Module](https://github.com/bash-bits/bb-import).  If you haven't yet installed BB-Import, perhaps you'd like to do so now?  It's as easy as running the following command in your terminal:
+Like ALL other Bash-Bits Modules, `BB-Functions` is "imported" using the [BB-Import Module](https://github.com/bash-bits/bb-import).  If you haven't yet installed `BB-Import`, perhaps you'd like to do so now?  It's as easy as running the following command in your terminal:
 
 ```shell
 bash <(curl -sfLS https://raw.githubusercontent.com/bash-bits/bb-import/master/install.sh)
 ```
 
-Once you've installed `BB-Functions`, you can include BB-ANSI in ANY of your Bash projects by including the following code snippet at the top of each file:
+Once you've installed `BB-Import`, you can include `BB-Functions` in ANY of your Bash projects by including the following code snippet at the top of each file:
 
 ```shell
 #!/usr/bin/env bb-import
@@ -214,32 +220,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [`^ Top`](#toc)
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/6827931/226142057-e0866834-aeee-41f2-8437-5db3d57fe794.png" alt="Star - Useful">
-</p>
-
 <h3 align="center">
 
-⭐ Star This Repo
+If you like this repo, please give it a ⭐ (it really does help)
 
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/bash-bits/bb-functions?style=social">
-
-<br /><br />
-
-<a name="support-this-project" href="#toc">!! SUPPORT THIS PROJECT !!</a>
-
-<a href="https://github.com/sponsors/ragdata" target="_blank"><img src="https://img.shields.io/badge/support_this_project-gray?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white?style=for-the-badge" alt="Support This Project"></a>
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/bash-bits/bb-import?style=social">
 
 </h3>
-
-<br />
-If this project is worth something to you, and you're in a position to be able to help out financially, it would <strong>really</strong> take the pressure off here and allow me to keep working and keep it all freely available!
-
-It doesn't have to be a lot, but you will magnify your contribution if you're able to give a little every month.  If you're not in a position to do that, but think you could make a small, one-time donation to the kitty - you'd be AMAZED how I can make a little go a LONG way!
-
-EVERY financial supporter gets their name associated with the project.
-
-Find out more on my [**Sponsor's Page**][sponsors]
 
 [`^ Top`](#toc)
 
