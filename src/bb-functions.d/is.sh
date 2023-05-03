@@ -181,6 +181,17 @@ is::date()
 	[[ "${!1}" =~ $pattern ]] && return 0 || return 1
 }
 # ------------------------------------------------------------------
+# is::dir
+# ------------------------------------------------------------------
+# @description Determine if the given argument is a directory
+#
+# @arg      $1      [string]        Path to test
+#
+# @exitcode 0       Success (true)
+# @exitcode 1       Failure (false)
+# ------------------------------------------------------------------
+is::dir() { [[ -d "$1" ]] && return 0 || return 1; }
+# ------------------------------------------------------------------
 # is::email
 # ------------------------------------------------------------------
 # @description Determine if the given variable exists and is email address
@@ -199,6 +210,17 @@ is::email()
 #	[[ "$(declare -p "$1" 2> /dev/null)" =~ $pattern ]] && return 0 || return 1
 	[[ "${!1}" =~ $pattern ]] && return 0 || return 1
 }
+# ------------------------------------------------------------------
+# is::file
+# ------------------------------------------------------------------
+# @description Determine if the given argument is a file
+#
+# @arg      $1      [string]        Path to test
+#
+# @exitcode 0       Success (true)
+# @exitcode 1       Failure (false)
+# ------------------------------------------------------------------
+is::file() { [[ -f "$1" ]] && return 0 || return 1; }
 # ------------------------------------------------------------------
 # is::function
 # ------------------------------------------------------------------
@@ -381,7 +403,7 @@ is::set() { [[ "${!1-a}" == "${!1-b}" ]]; }
 # @exitcode 0 - exists and is sourced (true)
 # @exitcode 1 - otherwise (false)
 # ------------------------------------------------------------------
-is::sourced() { [[ "${FUNCNAME[1]-}" == "source" || "${FUNCNAME[1]-}" == "bb::include" ]]; }
+is::sourced() { [[ "${FUNCNAME[1]-}" == "source" || "${FUNCNAME[1]-}" == "${BASH_SOURCE[0]}" ]]; }
 # ------------------------------------------------------------------
 # is::ssh
 # ------------------------------------------------------------------
