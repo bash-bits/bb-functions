@@ -6,10 +6,10 @@
 
 </h1>
 
-<h3 align="center"><em>
-The Bash Bits Functions Module<br />
-The Hardest Working Module in the Stack!
-</em></h3>
+<h3 align="center">
+The Bash Bits Functions Module<br /><br />
+<em>The Hardest Working Module in the Stack!</em>
+</h3>
 
 
 <h3 align="center">
