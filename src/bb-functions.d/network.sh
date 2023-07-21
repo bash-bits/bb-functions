@@ -1,4 +1,4 @@
-#!/usr/bin/env bb-import
+#!/usr/bin/env bash
 
 # ==================================================================
 # bb-functions.d/network

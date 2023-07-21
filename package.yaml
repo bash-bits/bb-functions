@@ -1,0 +1,17 @@
+name: BB-Functions
+id: bb-functions
+version: 0.1.0
+build-date: 20230717-2357
+synopsis: Bash-Bits Functions Library
+description: |
+    The Bash-Bits Functions Library.
+
+    An ever-increasing digital toolkit for developers.  BB-Functions is the digital workhorse which carries the bulk of the weight of any specific task on its very own broad shoulders - because, while figuring out if that array is empty isn't particularly glamorous work, someone HAS to do it ... over, and over, and over again ...
+
+    Please ensure that you read at least the repository's README file to better understand this module.
+category: Development
+author: Ragdata<ragdata@ragdata.dev>
+maintainer: Ragdata<ragdata@ragdata.dev>
+license: MIT
+homepage: https://github.com/bash-bits/bb-functions
+repository: https://github.com/bash-bits/bb-functions

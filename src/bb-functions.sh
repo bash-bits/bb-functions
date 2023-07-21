@@ -1,4 +1,4 @@
-#!/usr/bin/env bb-import
+#!/usr/bin/env bash
 
 # ==================================================================
 # bb-functions
@@ -10,6 +10,10 @@
 # Date:         15/04/2023
 # License:      MIT License
 # Copyright:    Copyright © 2023 Darren (Ragdata) Poulton
+# ==================================================================
+# DEPENDENCIES
+# ==================================================================
+bb-import bb-functions/is
 # ==================================================================
 # FUNCTIONS
 # ==================================================================
@@ -25,10 +29,6 @@ functions::load()
 
     local -a args=("$@")
 
-    [[ "${#args[@]}" -eq 0 ]] && args+=("all")
-
-    [[ "${args[0]}" == "all" ]] && unset args
-
     if [[ "${#args[@]}" -eq 0 ]]; then
         for file in "$currDir"/bb-functions.d/*
         do
@@ -38,7 +38,7 @@ functions::load()
 
     for file in "${args[@]}"
     do
-        bb::import "bb-functions/$file"
+        bb-import "bb-functions/$file"
     done
 }
 # ==================================================================

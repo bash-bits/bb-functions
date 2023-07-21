@@ -25,7 +25,7 @@ However, because BB-Functions itself is made up of a collection of smaller files
 If you use an `Implicit Import` to import BB-Functions, then BB-Import will cache every `type` file used by BB-Functions as well: 
 
 ```shell
-#!/usr/bin/env bb-import
+#!/usr/bin/env bash
 
 bb::import bb-functions
 ```
@@ -33,7 +33,7 @@ bb::import bb-functions
 If you use what looks like a Namespaced Import (but is actually a special kind of Implicit Import) to import BB-Functions, then BB-Import will import ONLY the type file that you've specified with the import command for now.
 
 ```shell
-#!/usr/bin/env bb-import
+#!/usr/bin/env bash
 
 bb::import bb-functions/array
 ```

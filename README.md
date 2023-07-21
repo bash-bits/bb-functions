@@ -120,7 +120,7 @@ bash <(curl -sfLS https://raw.githubusercontent.com/bash-bits/bb-import/master/i
 Once you've installed `BB-Import`, you can include `BB-Functions` in ANY of your Bash projects by including the following code snippet at the top of each file:
 
 ```shell
-#!/usr/bin/env bb-import
+#!/usr/bin/env bash
 
 bb-import bb-functions
 ```
