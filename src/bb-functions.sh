@@ -91,7 +91,13 @@ else
 	do
 		case "$1" in
 			-v|--version)
-				[[ -n "${2}" ]] && { functions::version "${2}"; shift 2; } || { functions::version; shift; }
+				if [[ -n "${2}" ]]; then
+					functions::version "${2}"
+					shift 2
+				else
+					functions::version
+					shift
+				fi
 				exitReturn 0
 				;;
 			--)
