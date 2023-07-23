@@ -29,10 +29,11 @@ utility::bashInit() { reset; exec sudo --login --user "$USER" /bin/bash -c "cd '
 # ------------------------------------------------------------------
 utility::checkBash() { [[ "${BASH_VERSION:0:1}" -lt 4 ]] && errorExit "This script requires a minimum Bash version of 4+"; }
 # ------------------------------------------------------------------
-# utility::checkCMD
+# utility::checkDeps
 # ------------------------------------------------------------------
+# @description Checks whether dependencencies listed in arg array are installed on the current system
 # ------------------------------------------------------------------
-utility::checkCMD()
+utility::checkDeps()
 {
     [[ $# -eq 0 ]] && return
     [[ ! $(is::array "$1") ]] && errorReturn "'$1' Not an Array!" 1
@@ -56,4 +57,4 @@ utility::checkRoot() { [[ "$EUID" -ne 0 ]] && errorExit "This script MUST be run
 bashInit() { utility::bashInit; }
 checkBash() { utility::checkBash; }
 checkRoot() { utility::checkRoot; }
-checkCMD() { utility::checkCMD "$@"; }
+checkDeps() { utility::checkDeps "$@"; }
