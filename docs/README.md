@@ -1,6 +1,6 @@
 <h1 align="center">
 
-<img src="https://raw.githubusercontent.com/bash-bits/.github/master/.github/media/BashBits-Social-800x400-X.png" alt="Bash Bits Modular Bash Library" />
+<img src="https://raw.githubusercontent.com/bash-bits/.github/master/.github/media/BashBits-Social-800x400-X.png" alt="Bash-Bits Modular Bash Library" />
 <br />
 <img src="https://raw.githubusercontent.com/bash-bits/.github/master/.github/media/bash_logo-128x128.png" alt="Bourne Again Shell" />
 

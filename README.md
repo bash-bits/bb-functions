@@ -1,15 +1,15 @@
 <h1 align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/Ragdata/media/master/banner/wip-banner.svg" />
+<img width="100%" src="https://raw.githubusercontent.com/Ragdata/media/master/banner/pre-release.svg" />
 
-<a href="https://github.com/bash-bits" target="_blank"><img alt="Bash-Bits" height="128" src="https://raw.githubusercontent.com/Ragdata/media/master/project/bash-bits/logo/BB-Logo-64-Full.svg" /></a>
+<a href="https://github.com/bash-bits" target="_blank"><img alt="Bash-Bits" height="128" src="https://raw.githubusercontent.com/Ragdata/media/master/project/bash-bits/logo/BB-Logo-Full.svg" /></a>
 
-[BB-Functions v-1.0.0](https://github.com/bash-bits/bb-functions/releases/tag/v-1.0.0)
+[BB-Functions v-0.1.0](https://github.com/bash-bits/bb-functions/releases/tag/v-0.1.0)
 
 </h1>
 
 <h3 align="center">
-The Bash Bits Functions Module<br /><br />
+The Bash-Bits Functions Module<br /><br />
 <em>The Hardest Working Module in the Stack!</em>
 </h3>
 
@@ -25,9 +25,8 @@ The Bash Bits Functions Module<br /><br />
 <div align="center">
 
 ![Check Status](https://img.shields.io/github/checks-status/bash-bits/bb-functions/master?logo=github&style=for-the-badge)
-![Open Bug Issues](https://img.shields.io/github/issues/bash-bits/bb-functions/bug?logo=github&style=for-the-badge)
+![Open Issues](https://img.shields.io/github/issues-raw/bash-bits/bb-functions?logo=github&style=for-the-badge)
 ![Last Commit](https://img.shields.io/github/last-commit/bash-bits/bb-functions/master?logo=github&style=for-the-badge)
-![Code Size](https://img.shields.io/github/repo-size/bash-bits/bb-functions?logo=github&style=for-the-badge)
 ![MIT](https://img.shields.io/badge/License-MIT-gold?style=for-the-badge)
 
 #### _Elapsed Project Time_
@@ -63,7 +62,7 @@ If you like this repo, please give it a ⭐ (it really does help)
 
 ## ⭐ [Project Overview](#toc)
 
-The Bash Bits Functions Module - an ever-increasing digital toolkit for developers.  BB-Functions is the digital workhorse which carries the bulk of the weight of any specific task on its own very broad shoulders - because, while figuring out if that array is empty isn't particularly _glamorous_ work, _someone_ HAS to do it ... over, and over, and over, and over again ... 
+The Bash-Bits Functions Module - an ever-increasing digital toolkit for developers.  BB-Functions is the digital workhorse which carries the bulk of the weight of any specific task on its own very broad shoulders - because, while figuring out if that array is empty isn't particularly _glamorous_ work, _someone_ HAS to do it ... over, and over, and over, and over again ... 
 
 ### [Branch Reliability](#toc)
 
@@ -129,27 +128,32 @@ bb-import bb-functions
 
 [`^ Top`](#toc)
 
+## 📛 [Badges](#toc)
+
+#### COMING SOON
+
+[`^ Top`](#toc)
+
 ## 💪 [Available Support](#toc)
 
 ### Project Resources
 
-- ✅ [Issues Register](https://github.com/bash-bits/bb-functions/issues)
-- ✅ [Project Website](https://bash-bits.github.io/bb-functions)
+- [Issues Register](https://github.com/bash-bits/bb-functions/issues)
+- [Project Website](https://bash-bits.github.io/bb-functions)
 
-<details><summary><h3>Community Resources</h3></summary>
+### Community Resources
 
 - [**The RedEyed Community Discord Server**](https://discord.gg/54PkrM7TKq)
 
 
-- [**Community Support Document**](https://github.com/bash-bits/bb-functions/blob/master/.github/SUPPORT.md)
-- [**Community Standards**](https://github.com/bash-bits/bb-functions/community)
-- [**Community Code of Conduct**](https://github.com/bash-bits/.github/blob/master/.github/CODE_OF_CONDUCT.md)
-- [**Security Policy**](https://github.com/bash-bits/bb-functions/security/policy)
+- [Community Support Document](https://github.com/bash-bits/bb-import/blob/master/.github/SUPPORT.md)
+- [Community Standards](https://github.com/bash-bits/bb-import/community)
+- [Community Code of Conduct](https://github.com/bash-bits/.github/blob/master/.github/CODE_OF_CONDUCT.md)
+- [Community Governance Policy](https://github.com/bash-bits/.github/blob/master/.github/GOVERNANCE.md)
+- [Security Policy](https://github.com/bash-bits/bb-import/security/policy)
     - [Security Overview](https://github.com/bash-bits/bb-functions/security)
     - [Security Advisories](https://github.com/bash-bits/bb-functions/security/advisories)
     - [Dependabot Alerts](https://github.com/bash-bits/bb-functions/security/dependabot)
-
-</details>
 
 [`^ Top`](#toc)
 
@@ -188,13 +192,13 @@ bb-import bb-functions
 
 ### [Join me & the RedEyed Community!](https://discord.gg/54PkrM7TKq)
 
-<a href="https://twitter.com/intent/follow?screen_name=RagdataAU" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" /></a>
-<a href="https://www.reddit.com/r/RedeyedSoftware/" target="_blank"><img alt="Reddit" src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=Reddit&logoColor=white" /></a>
-<a href="https://dev.to/ragdata" target="_blank"><img alt="Dev.to" src="https://img.shields.io/badge/dev.to-373737?style=for-the-badge&logo=dev.to&logoColor=white" /></a>
-<a href="https://ragdata.substack.com/" target="_blank"><img alt="SubStack" src="https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=Substack&logoColor=white" /></a>
-<a href="https://www.facebook.com/RedEyedSoftware/" target="_blank"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=Facebook&logoColor=white" /></a>
+<a href="https://www.facebook.com/RedeyedAU/" target="_blank"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=Facebook&logoColor=white" /></a>
+<a href="https://redeyedau.substack.com/" target="_blank"><img alt="SubStack" src="https://img.shields.io/badge/Substack-FF6719?style=for-the-badge&logo=Substack&logoColor=white" /></a>
+<a href="https://dev.to/redeyed-au" target="_blank"><img alt="Dev.to" src="https://img.shields.io/badge/dev.to-373737?style=for-the-badge&logo=dev.to&logoColor=white" /></a>
+<a href="https://www.reddit.com/r/RedeyedAU/" target="_blank"><img alt="Reddit" src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=Reddit&logoColor=white" /></a>
+<a href="https://twitter.com/intent/follow?screen_name=RedeyedAU" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" /></a>
 
-[![Discord](https://img.shields.io/discord/1067204348251230298?labelColor=5865F2&label=RedEyed%20Software%20&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/54PkrM7TKq)
+[![Discord](https://img.shields.io/discord/1067204348251230298?labelColor=5865F2&label=RedEyed%20Software%20&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/s6gZZUc67y)
 
 </div>
 
@@ -202,7 +206,7 @@ bb-import bb-functions
 
 ## 🔐 [Security](#toc)
 
-While the `Bash Bits` project follows good security practices, 100% security can never be guaranteed in any software package.  The `Bash Bits Functions Module` is provided AS IS, and without warranty.  You can find more details in the [LICENSE](LICENSE) file included with this repository.
+While the `Bash-Bits` project follows good security practices, 100% security can never be guaranteed in any software package.  The `Bash-Bits Functions Module` is provided AS IS, and without warranty.  You can find more details in the [LICENSE](LICENSE) file included with this repository.
 
 If you discover any issue regarding the security of this project, please disclose that information responsibly by sending a [security advisory][advisory].  **PLEASE DO NOT CREATE AN ISSUE OR DISCUSSION TOPIC.**  You can read more about this project's security policies [HERE][security]
 
@@ -214,7 +218,7 @@ If you discover any issue regarding the security of this project, please disclos
 [![All Contributors](https://img.shields.io/github/all-contributors/bash-bits/bb-functions?color=ee8449&style=for-the-badge)](CONTRIBUTORS.md)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-If you'd like to make a contribution, then please see the [**Bash Bits Contributor's Guide**][contributing]
+If you'd like to make a contribution, then please see the [**Bash-Bits Contributor's Guide**][contributing]
 
 It's not just contributions of code that I'm looking for.  If you have any ideas or suggestions about how this project may be improved, don't hesitate to [open an issue][issues] and let me know!  Contributions of ALL kinds will be recognised here if they are made part of this project - thanks to the [All-Contributors][all-contributors] bot.
 
