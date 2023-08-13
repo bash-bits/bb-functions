@@ -51,6 +51,27 @@ utility::checkDeps()
 # ------------------------------------------------------------------
 # ------------------------------------------------------------------
 utility::checkRoot() { [[ "$EUID" -ne 0 ]] && errorExit "This script MUST be run as root!"; }
+# ------------------------------------------------------------------
+# utility::getPassword
+# ------------------------------------------------------------------
+utility::getPassword()
+{
+    local len="${1:-16}"
+    local NUM_REGEX, CAP_REGEX, SML_REGEX, SYM_REGEX
+    local passwd=""
+
+    NUM_REGEX='^.*[0-9]+.*$'
+    CAP_REGEX='^.*[A-Z]+.*$'
+    SML_REGEX='^.*[a-z]+.*$'
+    SYM_REGEX='^[A-Za-z0-9]+[@#$%&_+=][A-Za-z0-9]+$'
+
+    while [[ ! $passwd =~ $NUM_REGEX ]] && [[ ! $passwd =~ $CAP_REGEX ]] && [[ ! $passwd =~ $SML_REGEX ]] && [[ ! $passwd =~ $SYM_REGEX ]]
+    do
+        passwd=$(tr </dev/urandom -dc 'A-Za-z0-9@#$%&_+=' | head -c "$len")
+    done
+
+    echoLog "$passwd"
+}
 # ==================================================================
 # ALIAS FUNCTIONS
 # ==================================================================
