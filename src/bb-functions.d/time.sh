@@ -12,7 +12,7 @@
 # Copyright:    Copyright © 2023 Darren (Ragdata) Poulton
 # ==================================================================
 # @file bb-functions.d/time
-# @brief Time Functions for BB-Functions Bash Bits Submodule
+# @brief Time Functions for BB-Functions Bash-Bits Submodule
 # ==================================================================
 # ATTRIBUTION:	Portions of this software have been inspired, adapted,
 #               or borrowed from Labbots brilliant 'bash-utility' package.
