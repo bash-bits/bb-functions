@@ -27,7 +27,7 @@ apt::addRepo()
     for repo in "$@"
     do
         echoLog "Adding APT Repository '$repo': " -n
-        if add-apt-repository "$repo" -y; then echoLog "SUCCESS!" -c; else errorLog "FAILED!" -c; fi
+        if sudo add-apt-repository "$repo" -y; then echoLog "SUCCESS!" -c; else errorLog "FAILED!" -c; fi
     done
 }
 # ------------------------------------------------------------------
@@ -62,10 +62,10 @@ apt::install()
 
     if [[ "$log" -eq 1 ]] && [[ -f "$BB_LOG" ]]; then
         echoLog "Running 'apt-get clean': " -n
-        if apt-get clean -qq -y; then echoLog "SUCCESS!" -c; else exitLog "FAILED!" -c; fi
+        if sudo apt-get clean -qq -y; then echoLog "SUCCESS!" -c; else exitLog "FAILED!" -c; fi
     else
         echo -n "Running 'apt-get clean': "
-        if apt-get clean -qq -y; then echoSuccess "SUCCESS!"; else echoError "FAILED!"; fi
+        if sudo apt-get clean -qq -y; then echoSuccess "SUCCESS!"; else echoError "FAILED!"; fi
     fi
 }
 # ------------------------------------------------------------------
@@ -107,10 +107,10 @@ apt::installPkg()
 
     if [[ "$log" -eq 1 ]] && [[ -f "$BB_LOG" ]]; then
         echoLog "Installing package '$package': " -n
-        if apt install -qq -y; then echoLog "SUCCESS!" -c; else exitLog "FAILED!" -c; [[ "$fail" -eq 1 ]] && return 1; fi
+        if sudo apt install -qq -y; then echoLog "SUCCESS!" -c; else exitLog "FAILED!" -c; [[ "$fail" -eq 1 ]] && return 1; fi
     else
         echo -n "Installing package '$package': "
-        if apt install -qq -y; then echoSuccess "SUCCESS!"; else echoError "FAILED!"; [[ "$fail" -eq 1 ]] && return 1; fi
+        if sudo apt install -qq -y; then echoSuccess "SUCCESS!"; else echoError "FAILED!"; [[ "$fail" -eq 1 ]] && return 1; fi
     fi
 }
 # ------------------------------------------------------------------
@@ -139,10 +139,10 @@ apt::remove()
 
     if [[ "${log}" -eq 1 ]] && [[ -f "$BB_LOG" ]]; then
         echoLog "Running 'apt-get autoremove && apt-get autoclean': " -n
-        if apt-get autoremove && apt-get autoclean -qq -y; then echoLog "SUCCESS!" -c; else errorLog "FAILED!" -c;fi
+        if sudo apt-get autoremove && apt-get autoclean -qq -y; then echoLog "SUCCESS!" -c; else errorLog "FAILED!" -c;fi
     else
         echo -n "Running 'apt-get autoremove && apt-get autoclean': "
-        if apt-get autoremove && apt-get autoclean -qq -y; then echoSuccess "SUCCESS!" -c; else echoError "FAILED!" -c;fi
+        if sudo apt-get autoremove && apt-get autoclean -qq -y; then echoSuccess "SUCCESS!" -c; else echoError "FAILED!" -c;fi
     fi
 }
 # ------------------------------------------------------------------
@@ -179,10 +179,10 @@ apt::removePkg()
 
     if [[ "$log" -eq 1 ]] && [[ -f "$BB_LOG" ]]; then
         echoLog "Removing package '$package': " -n
-        if apt purge -qq -y; then echoLog "SUCCESS!" -c; else exitLog "FAILED!" -c; fi
+        if sudo apt purge -qq -y; then echoLog "SUCCESS!" -c; else exitLog "FAILED!" -c; fi
     else
         echo -n "Installing package '$package': "
-        if apt purge -qq -y; then echoSuccess "SUCCESS!"; else echoError "FAILED!"; fi
+        if sudo apt purge -qq -y; then echoSuccess "SUCCESS!"; else echoError "FAILED!"; fi
     fi
 }
 # ------------------------------------------------------------------
@@ -191,7 +191,7 @@ apt::removePkg()
 apt::findPkg()
 {
     [[ -z "$1" ]] && errorReturn "apt::findPkg :: Cowardly refusing to search for nothing!"
-    apt-cache search "${1}"
+    sudo apt-cache search "${1}"
 }
 # ------------------------------------------------------------------
 # apt::showPkg
@@ -199,7 +199,7 @@ apt::findPkg()
 apt::showPkg()
 {
     [[ -z "$1" ]] && errorReturn "apt::showPkg :: Cowardly refusing to show nothing!"
-    apt-cache show "${1}"
+    sudo apt-cache show "${1}"
 }
 # ------------------------------------------------------------------
 # apt::list
@@ -212,10 +212,10 @@ apt::list()
 
     case "$1" in
         -a|--available|available)
-            cmd="apt-cache search ."
+            cmd="sudo apt-cache search ."
             ;;
         -i|--installed|installed)
-            cmd="apt list --installed"
+            cmd="sudo apt list --installed"
             ;;
         *)
             errorReturn "apt::list :: Invalid Argument '$1'!"
