@@ -17,12 +17,7 @@ bb-import bb-functions/is
 # ==================================================================
 # VARIABLES
 # ==================================================================
-#
-# BUILD VARIABLES
-#
-declare -gx FUNCTIONS_BUILD="x"
-declare -gx FUNCTIONS_VERSION="v-1.0.0"
-declare -gx FUNCTIONS_BUILD_DATE="20230718-0033"
+source ../.github/.version
 # ==================================================================
 # FUNCTIONS
 # ==================================================================
@@ -64,14 +59,14 @@ functions::version()
 	local verbosity="${1:-}"
 
 	if [[ -z "$verbosity" ]]; then
-		echo "${FUNCTIONS_VERSION}"
+		echo "${PKG_VERSION}"
 	else
 		echo
 		echo "Bash-Bits Modular Bash Library"
-		echoWhite "BB-Functions Module ${FUNCTIONS_VERSION}"
+		echoWhite "BB-Functions Module ${PKG_VERSION}"
 		echo "Copyright © 2022-2023 Darren (Ragdata) Poulton"
-		echo "Build: ${FUNCTIONS_BUILD}"
-		echo "Build Date: ${FUNCTIONS_BUILD_DATE}"
+		echo "Build: ${PKG_BUILD}"
+		echo "Build Date: ${PKG_BUILD_DATE}"
 		echo
 	fi
 }
